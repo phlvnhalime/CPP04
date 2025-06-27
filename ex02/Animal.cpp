@@ -21,9 +21,10 @@ Animal& Animal::operator=(const Animal& copy){
 Animal::~Animal(){
     std::cout << GREEN << "Animal destructor called" << RESET << std::endl;
 }
-void Animal::makeSound() const{
-    std::cout << "Animal sounds" << std::endl;
-}
+//  I don't need makeSound for this exercise
+// void Animal::makeSound() const{
+//     std::cout << "Animal sounds" << std::endl;
+// }
 
 std::string Animal::getType() const{
     return name;

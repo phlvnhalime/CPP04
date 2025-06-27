@@ -46,7 +46,7 @@ class Animal{
          It will print an appropriate sound (cats don’t bark).
         */
         // It is a function for polymorphism 
-        virtual void makeSound() const;
+        virtual void makeSound() const = 0;
         std::string getType() const;
 };
 
