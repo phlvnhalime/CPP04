@@ -4,7 +4,7 @@ CXX = c++
 
 CXXFLAG = -Wall -Wextra -Werror -std=c++11
 
-SRCS= main.cpp
+SRCS= main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp
 
 OBJ = $(SRCS:.cpp=.o)
 

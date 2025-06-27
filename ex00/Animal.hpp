@@ -19,6 +19,14 @@
     It will print an appropriate sound (cats don’t bark).
 ************************************************************************** */
 
+#define RESET       "\033[0m"
+#define BLACK       "\033[30m"
+#define RED         "\033[31m"
+#define GREEN       "\033[32m"
+#define YELLOW      "\033[33m"
+#define BLUE        "\033[34m"
+
+
 class Animal{
     protected:
         std::string name;
@@ -26,7 +34,7 @@ class Animal{
         // Constructor (Default)
         Animal();
         // Copy of constructor
-        Animal(const std::string& copy);
+        Animal(const Animal& copy);
         // Assignment opperator
         Animal& operator=(const Animal& copy);
 
@@ -39,6 +47,6 @@ class Animal{
         */
         // It is a function for polymorphism 
         virtual void makeSound() const;
-        std::string getAnimal() const;
+        std::string getType() const;
 };
 

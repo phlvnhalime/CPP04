@@ -5,7 +5,7 @@ Animal::Animal(): name("Animal"){
     std::cout << GREEN <<"Animal default constructor called" << RESET << std::endl;
 }
 
-Animal::Animal(const std::string& copy): name(copy.name){
+Animal::Animal(const Animal& copy): name(copy.name){
     std::cout << "Animal copy Constructor called" << std::endl;
 }
 
@@ -19,12 +19,12 @@ Animal& Animal::operator=(const Animal& copy){
 }
 
 Animal::~Animal(){
-    std::cout << "Animal destructor called" << std::endl;
+    std::cout << GREEN << "Animal destructor called" << RESET << std::endl;
 }
 void Animal::makeSound() const{
     std::cout << "Animal sounds" << std::endl;
 }
 
-std::string Animal::getAnimal() const{
+std::string Animal::getType() const{
     return name;
 }
